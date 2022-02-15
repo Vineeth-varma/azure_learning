@@ -8,6 +8,7 @@
 ![image](https://user-images.githubusercontent.com/60296821/147773511-c4f76609-5048-403e-8a99-4e7a70ddb2ac.png)
 
 * When you create a virtual machine in a virtual network, the virtual machine gets a Private IP address from the address space of the subnet is it launched in.
+* **Network Interface:** - This is the interconnection between the virtual Machine and Virtual Network.
 
 ## Network Security Groups
 * These are used to filter network traffic to and from Azure resources in an Azure virtual network.
@@ -24,6 +25,12 @@
 * Once you enable virtual network peering between two virtual networks, the virtual machines can then communicate via their private IP addresses across the peering connection.
 * You can also peer virtual networks that are located across different subscriptions.
 * The virtual networks can't have overlapping CIDR blocks.
+
+## Azure DNS
+* **DNS Zone:-** This is used to host the dns regards for a particular domain. Here azure DNS can resolve host names in your public domain.
+* **Private DNS Zone:-** Here domain names can be resolved within the virtual network.
+* **Virtual Network Link:-** To ensure that the virtual network can use the private DNS zone, You need to link the virtual network to the zone.
+* **AutoRegistration:-** Here DNS records for your virtual machines automatically created in the zone.
 
 ## Point-to-Site VPN Connection
 * A Point-to-Site VPN connection is used to establish a secure connection between multiple client machines and an Azure virtual network via the Internet.
