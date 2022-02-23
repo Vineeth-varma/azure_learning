@@ -32,6 +32,18 @@
 * **Virtual Network Link:-** To ensure that the virtual network can use the private DNS zone, You need to link the virtual network to the zone.
 * **AutoRegistration:-** Here DNS records for your virtual machines automatically created in the zone.
 
+## Azure Load Balancer
+* **Azure Availability Sets**
+  * **Failure -** This feature helps to protect againist infrastructure failures.
+  * **Unplanned Events -** This is when the underlying infrastucture fails Unexpectedly. the failure could be attributed to network, rack, local disk failures etc.,
+  * **Planned Maintainance Activities -** Microsoft needs to do planned updates to the underlying physical infrastructure, which needs reboot on your virtual machine.
+  * **Availibility Sets -** Here when a machine is assigned to am availability set it is assigned with a fault and Update domain.
+* **Azure Availibility Zones**
+  * **Failure -** This feature helps to provide better availability for your application by protecting them  from data center failure.
+  * **Zones -** Each availibility zone is a unique physical location in a azure region. Zone consists of one or more data centers that has seperate power, cooling and network.
+  * **Protection -** Hence physical seperation of the Availibility zones helps protect applications againist the data center failures.
+  * **Availibilty -** Using Availibility zones you can be gaurenteed an availibility of 99.9% for your virtual Machines.
+
 ## Point-to-Site VPN Connection
 * A Point-to-Site VPN connection is used to establish a secure connection between multiple client machines and an Azure virtual network via the Internet.
 * Below is a diagram from the Microsoft documentation on a sample scenario
