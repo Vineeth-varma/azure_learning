@@ -43,7 +43,37 @@
   * **Zones -** Each availibility zone is a unique physical location in a azure region. Zone consists of one or more data centers that has seperate power, cooling and network.
   * **Protection -** Hence physical seperation of the Availibility zones helps protect applications againist the data center failures.
   * **Availibilty -** Using Availibility zones you can be gaurenteed an availibility of 99.9% for your virtual Machines.
+* **Azure LoadBalancer**
+  * This is a service that is used to distribute incoming traffic across a group of backend resources or servers.
+  * The service opereates at the layer 4 of the OSI model.
+  * **Public Load Balancer -** This provides outbound connections for virtual machines inside the virtual network.
+  * **Performance -** Load Balancer provides low latency and high throughput.
+  * **Internal LaodBalancer -** This is used to loadbalance traffic inside a virtual network.
+  * **Scaling -** The loadBalancer can scale up to millions of flows for a TCP and UDP applications.
+  ## Basic SKU
+  * This is a free version of the load Balancer.
+  * The backend virtual Machines needs to be part of an availability set or a scale set.
+  * Supports helath probes of TCP and HTTP.
+  * Does not have an SLA.
+  ## Standard SKU
+  * Here there is an hourly charge.
+  * The backend virtual Machines can also be independent machinesthat are part of a virtual network.
+  * Supports helath probes of TCP, HTTP and HTTPS.
+  * Has an SLA of 99.99%.
+* **Azure LoadBalancer Components**
+  * **Load-Balancing Rules -** This defines how incoming traffic is distributed to the instances in the backend pool. A rule maps a frontend IP and port to the backend IP adresses and ports.
+  * **Health Probe -** This is used to determine the health status of the instances in the backend pool.
+  * **Inbound NAT Rules -** This forwards incoming traffic sent to frontend IP and port to a specific virtual machine in the backend pool.
+  * **Outbound Rules -** This enables instances in the backend to communicate with the internet.
+## Azure Virtual Machine Scale Sets
+* This service helps to create and manage group of load Balancer VM's.
+* Here VM's can be created on demand.
+* **Integration -** This service can be used with the Load-Balancer.
+* **Virtual Machines -** Here VM's can be created based on the base image for the machine.
+* **Rules -** You can use rules and conditions to scale out or scale in the number of virtual machines.
+* **Availibility -** This service can automatically distribute the VM's across availability sets and Availability Zones.
 
+ 
 ## Point-to-Site VPN Connection
 * A Point-to-Site VPN connection is used to establish a secure connection between multiple client machines and an Azure virtual network via the Internet.
 * Below is a diagram from the Microsoft documentation on a sample scenario
