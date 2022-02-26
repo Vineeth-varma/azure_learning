@@ -73,6 +73,24 @@
 * **Rules -** You can use rules and conditions to scale out or scale in the number of virtual machines.
 * **Availibility -** This service can automatically distribute the VM's across availability sets and Availability Zones.
 
+## Azure Application Gateway
+* **LoadBalancer -** This is a web traffic LoadBalancer. This makes routing decisions based on the attributes of the http requests.
+* **AutoScaling -** The standard_v2 SKU supports autoscaling that can scale up and down based on traffic load patterns.
+* **High Availibility -** For the standard_v2 SKU, the gateway can span multiple availability zones.
+* **Layer 7 -** This loadbalancer operates at layer7.
+### Azure Application Gateway Features
+* **URL-based routing -** Here requests can be routed to the backend server pools based on the URL paths of the request.
+* **Multiple-site Hosting -** Here you can configure routing based on the host name or domain name.
+* **Rewrite HTTP headers or URl -** Here you can create rules to rewrite the headers and URL's.
+* **Web application Firewall -** This feature helps to protect your web applications.
+### Azure application Gateway Components
+* **Frontend IP-Adress -** IP adress that is associated with the application gateway.
+* **Listeners -** This is a logical entity that checks for incoming requests.
+* **Requests Routing Rule -** The rule binds the listener, the backed server pool and the backend http settings.
+* **HTTP Settings -** The settings determine how requests are routed to the backend servers.
+* **Backend Pools -** This contains the backend servers.
+* **Health Probes -** Here you can define your own custom health probes.
+
  
 ## Point-to-Site VPN Connection
 * A Point-to-Site VPN connection is used to establish a secure connection between multiple client machines and an Azure virtual network via the Internet.
