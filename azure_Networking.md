@@ -65,6 +65,8 @@
   * **Health Probe -** This is used to determine the health status of the instances in the backend pool.
   * **Inbound NAT Rules -** This forwards incoming traffic sent to frontend IP and port to a specific virtual machine in the backend pool.
   * **Outbound Rules -** This enables instances in the backend to communicate with the internet.
+
+
 ## Azure Virtual Machine Scale Sets
 * This service helps to create and manage group of load Balancer VM's.
 * Here VM's can be created on demand.
@@ -72,6 +74,7 @@
 * **Virtual Machines -** Here VM's can be created based on the base image for the machine.
 * **Rules -** You can use rules and conditions to scale out or scale in the number of virtual machines.
 * **Availibility -** This service can automatically distribute the VM's across availability sets and Availability Zones.
+
 
 ## Azure Application Gateway
 * **LoadBalancer -** This is a web traffic LoadBalancer. This makes routing decisions based on the attributes of the http requests.
@@ -91,7 +94,21 @@
 * **Backend Pools -** This contains the backend servers.
 * **Health Probes -** Here you can define your own custom health probes.
 
- 
+
+## Azure Traffic Manager
+**Priority -** Here you can direct users to a secondary endpoint if the primary one fails.
+**Weighted -** Here you can assign weights to each endpoint.
+**Performance -** Here users can be directed to the closest endpoints with the lowest network latency.
+**Geographic -** Here users are directed endpoints based on their geographic location.
+**Multi-Value -** Here multiple endpoints are sent to the User.
+**Subnet -** Here the endpoint is decided based on the subnet the user is located in.
+**Endpoint Types**
+* **Azure Endpoints -** This can PaaS cloud services, Web Apps, Web App Slots, Public IP Adresses that are assigned to virtual machines. Here the VM's ned to also have a DNS name assigned.
+* **External Endpoints -** This can be Ip Adresses or FQDN's that are loacted outside of azure.
+* **Nested Endpoints -** This can be another Azure traffic Manger Profile.
+
+
+
 ## Point-to-Site VPN Connection
 * A Point-to-Site VPN connection is used to establish a secure connection between multiple client machines and an Azure virtual network via the Internet.
 * Below is a diagram from the Microsoft documentation on a sample scenario
