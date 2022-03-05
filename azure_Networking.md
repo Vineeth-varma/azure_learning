@@ -107,7 +107,19 @@
 * **External Endpoints -** This can be Ip Adresses or FQDN's that are loacted outside of azure.
 * **Nested Endpoints -** This can be another Azure traffic Manger Profile.
 
+## Azure Front Door 
+* It will provide the combined benefits of both Azure Traffic Manager & Azure Application Gateway. or more info follow the microsoft docs.
 
+## Azure Virtual Network NAT
+* NAT gateway helps to provide a common public IP for group of VM's
+
+## Azure WAF Policy
+* There are to kinds of modes Prevention and Detection.
+* In Prevention mode the rule we apply will be executed.
+* In detection mode it will print the logs to one storage account we create.
+
+## Azure User defined Routes using Route Table
+* Refer documentation for this.
 
 ## Point-to-Site VPN Connection
 * A Point-to-Site VPN connection is used to establish a secure connection between multiple client machines and an Azure virtual network via the Internet.
