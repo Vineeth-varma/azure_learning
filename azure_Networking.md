@@ -121,6 +121,8 @@
 ## Azure User defined Routes using Route Table
 * Refer documentation for this.
 
+## Azure Virtual Network
+
 ## Point-to-Site VPN Connection
 * A Point-to-Site VPN connection is used to establish a secure connection between multiple client machines and an Azure virtual network via the Internet.
 * Below is a diagram from the Microsoft documentation on a sample scenario
