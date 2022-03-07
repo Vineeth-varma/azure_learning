@@ -121,10 +121,20 @@
 ## Azure User defined Routes using Route Table
 * Refer documentation for this.
 
-## Azure Virtual Network
-
-## Point-to-Site VPN Connection
-* A Point-to-Site VPN connection is used to establish a secure connection between multiple client machines and an Azure virtual network via the Internet.
+## Azure Virtual Private Network
+### Point-to-Site VPN Connection
+* **Secure Connection -** A Point-to-Site VPN connection is used to establish a secure connection between multiple client machines and an Azure virtual network via the Internet.
+* **Few Clients -** This is ideal when you have a few clients that need to connect to the Azure virtual network.
+* **VPN Connection -** The VPN Connection is created over SSTP(Secure Socket Tunneling Protocol) or IKEv2
+* **Authentication -** You have different authentication methods that can be used - Certificates, Azure AD.
+* **Gateway Subnet -** Your virtual Network needs to have a Gateway Subnet in place. Here the VM's that will manage the VPN will be deployed here.
+* **Virtual Network Gateway -** This allows you to configure the Virtual Network Gateway Connection.
+* **Certificates -** You can use self-signed certificates. The public key  of the root certificate is uploaded to the Azure Virtual network gateway.
+* **Client -** Eacch client needs to hav the client certificate installed.
+* **Point-to-site VPN Protocols**
+  * **SSTP -** Developed by Microsoft. Here the encrypted tunnel is created over TCP port 443. Uses SSL/TLS protocol.
+  * **OpenVPN -** This is an open standard createed to implement secure connections. Used the OpenSSL library.
+  * **IKEv2 -** Internet Key Exchange uses the IPsec protocol suite to establish a secure connection.
 * Below is a diagram from the Microsoft documentation on a sample scenario
 ![image](https://user-images.githubusercontent.com/60296821/147773851-28dcd83f-f0af-4710-a119-22ee24eb4234.png)
 
