@@ -177,3 +177,6 @@
 * With Policy-based VPN’s , you can make use of traffic selectors to direct the traffic to different on-premises networks depending on the IP address ranges.
 * For further reference on Policy-based VPN’s, one can refer to the below URL
 * https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps
+
+## Azure Virtual WAN
+* https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about
