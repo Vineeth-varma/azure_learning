@@ -163,17 +163,17 @@
 * You can change the IKE policy configuration when it comes the Azure VPN gateway
 * In your virtual network gateway, you can click on Connections to see your Site-to-Site connections
 * Then click on the actual Site-to-Site connection
-* ![image](https://user-images.githubusercontent.com/60296821/157166866-3f0bb3ca-b32a-4d3f-b328-e856fac9a8cc.png)
+![image](https://user-images.githubusercontent.com/60296821/157166866-3f0bb3ca-b32a-4d3f-b328-e856fac9a8cc.png)
 * This will actually open up the connection resource. Here go to the Configuration section
-* ![image](https://user-images.githubusercontent.com/60296821/157166917-6bf76d82-86b1-4c11-b102-cce2d862cfcf.png)
+![image](https://user-images.githubusercontent.com/60296821/157166917-6bf76d82-86b1-4c11-b102-cce2d862cfcf.png)
 * And then you can set IKE settings. For example, you can choose the encryption algorithm being used.
-* ![image](https://user-images.githubusercontent.com/60296821/157167005-48505731-ba79-4003-86d1-470ef88c87e0.png)
+![image](https://user-images.githubusercontent.com/60296821/157167005-48505731-ba79-4003-86d1-470ef88c87e0.png)
 * For further reference on configuring the IKE policy, one can refer to the below URL
 * https://docs.microsoft.com/en-us/azure/vpn-gateway/ipsec-ike-policy-howto
 
 ### Policy vs Route-based VPN gateways
 * When you create a Virtual network gateway , you can choose from either Route-based or Policy-based VPN’s. Normally you will choose Route-based VPN’s because these VPN’s have a lot of features over Policy-based VPN’s.
-* ![image](https://user-images.githubusercontent.com/60296821/157167132-c3e9d265-6df0-4f23-8569-21d6336a231f.png)
+![image](https://user-images.githubusercontent.com/60296821/157167132-c3e9d265-6df0-4f23-8569-21d6336a231f.png)
 * With Policy-based VPN’s , you can make use of traffic selectors to direct the traffic to different on-premises networks depending on the IP address ranges.
 * For further reference on Policy-based VPN’s, one can refer to the below URL
 * https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps
