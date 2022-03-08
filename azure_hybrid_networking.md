@@ -57,3 +57,19 @@
 
 ## Azure Virtual WAN
 * https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about
+
+## Azure ExpressRoute
+* **Connection -** Allows you to connect to your on-premises networks to microsoft cloud over a private connection.
+* **Redundancy -** Each ExpressRoute circuit has two connection for Redundancy Purposes. Primary,Secondary - both in active active mode.
+* **Peerings**
+  * **Private Peering -** Azure Private peering allows you to connect to your azure virtual network resources.
+  * **Microsoft Peering -** This allows you to connect to public services such as Microsoft 365 and Azure PaaS Services.
+* **Gateway -** Your azure virtual network needs to have a virtual network gateway in place that is configured to use ExpressRoute.
+* **FastPath -** This improves data path performance between on-premises network and the azure virtual network. Virtual Network Gateway - Ultra Performance, ErGw3AZ.
+* **Global Reach -** This allows you to connect your on-premises networks together via their individual ExpressRoute circuits.
+* **Bidirectional Forwarding Detection**
+  * This is a feature available in Azure ExpressRoute. This helps to quickly detect a link failure between the Microsoft Enterprise Edge devices and the Azure ExpressRoute circuit.
+  * For more information on Bidirectional Forwarding Detection , one can visit the below URL
+  * https://docs.microsoft.com/en-us/azure/expressroute/expressroute-bfd
+
+ 
