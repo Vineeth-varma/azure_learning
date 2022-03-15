@@ -96,13 +96,16 @@
 
 
 ## Azure Traffic Manager
-**Priority -** Here you can direct users to a secondary endpoint if the primary one fails.
-**Weighted -** Here you can assign weights to each endpoint.
-**Performance -** Here users can be directed to the closest endpoints with the lowest network latency.
-**Geographic -** Here users are directed endpoints based on their geographic location.
-**Multi-Value -** Here multiple endpoints are sent to the User.
-**Subnet -** Here the endpoint is decided based on the subnet the user is located in.
-**Endpoint Types**
+* The Azure Traffic Manager service is a DNS-based traffic load balancer that distributes traffic across services that are distributed across different Azure regions.
+* The Traffic Manager service is used to direct client requests to the most appropriate service endpoint that is based on a traffic-routing method and the health of the endpoints.
+* The different traffic routing methods available for the Azure Traffic Manager are
+* **Priority -** Here you can direct users to a secondary endpoint if the primary one fails.
+* **Weighted -** Route traffic to different endpoints based on weight.
+* **Performance -** Here users can be directed to the closest endpoints with the lowest network latency.
+* **Geographic -** Here users are directed to endpoints based on their geographic location.
+* **Multi-Value -** Here multiple endpoints are sent to the User.Here different endpoints are sent to the client. The client then selects the endpoint to send the request to.
+* **Subnet -** Here the endpoint is decided based on the subnet the user is located in.
+### Endpoint Types
 * **Azure Endpoints -** This can PaaS cloud services, Web Apps, Web App Slots, Public IP Adresses that are assigned to virtual machines. Here the VM's ned to also have a DNS name assigned.
 * **External Endpoints -** This can be Ip Adresses or FQDN's that are loacted outside of azure.
 * **Nested Endpoints -** This can be another Azure traffic Manger Profile.
